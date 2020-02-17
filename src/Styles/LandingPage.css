@@ -1,0 +1,103 @@
+@media (min-width: 600px) {
+  .App {
+    background-position: center center;
+  }
+
+  .App-content {
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+.landing {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../Assets/landing.svg);
+}
+.landingg {
+  height: 100%;
+  align-items: center;
+  padding: 40px;
+}
+
+.blogin {
+  float: right;
+  width: 110px;
+  height: 50px;
+  border: solid;
+  border-color: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0);
+  color: rgb(45, 120, 196);
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 5px;
+}
+.blogin:hover {
+  background: rgb(50, 153, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+  color: white;
+  border: transparent;
+}
+.breg {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: transparent;
+  border-radius: 10px;
+  background: rgb(45, 120, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 120, 196, 1) 0%,
+    rgba(50, 153, 255, 1) 100%
+  );
+  color: white;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+.breg:hover {
+  background: rgb(50, 153, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+  opacity: 1;
+}
+.petmatch {
+  position: absolute;
+  font-size: 70px;
+  margin-top: -20px;
+  font-family: "Lobster", cursive;
+}
+.divtittle {
+  margin-top: 100px;
+  font-family: "Titillium Web", sans-serif;
+  
+}
+.moto {
+  font-size: 60px;
+}
+.divreg {
+  float: left;
+  margin-top: 150px;
+}
+.term {
+  color: white;
+  margin-top: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+#hppy {
+  font-weight: bold;
+}

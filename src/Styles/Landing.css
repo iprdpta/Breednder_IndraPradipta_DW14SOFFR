@@ -1,0 +1,34 @@
+.blogin {
+  float: right;
+  margin-top: 60px;
+  margin-right: 60px;
+  width: 150px;
+  height: 50px;
+  border: 5px;
+  background-color: #4d6aff;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: "Titillium Web";
+  opacity: 0.9;
+}
+.blogin:hover {
+  background-color: #8095ff;
+}
+.breg {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: 0px;
+  background-color: #4d6aff;
+  border-radius: 20px;
+  font-size: 30px;
+  color: white;
+  font-family: "Titillium Web";
+  opacity: 0.9;
+}
+.breg:hover {
+  background-color: #8095ff;
+}

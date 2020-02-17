@@ -1,0 +1,115 @@
+.formzz {
+  margin-top: 20px;
+  overflow: auto;
+  height: 450px;
+}
+.formxx {
+  position: relative;
+  width: 350px;
+  margin-right: 50px;
+  margin-left:75px;
+}
+.bdyx {
+  position: relative;
+  margin-top: 20px;
+  height: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#cdxxx {
+  /* position: relative;
+    left: 10px; */
+}
+#save {
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 50px;
+  border: transparent;
+  border-radius: 10px;
+  background: rgb(45, 120, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 120, 196, 1) 0%,
+    rgba(50, 153, 255, 1) 100%
+  );
+  color: white;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#save:hover {
+  background: rgb(50, 153, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+}
+.cardmgx {
+  width: 150px;
+  height: 150px;
+
+  border: transparent;
+  border-radius: 10px;
+}
+.imagexz {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.cardmgx:hover {
+  filter: contrast(140%);
+}
+.addbut {
+  width: 170px;
+  height: 170px;
+  background-image: url(../Assets/adds.png);
+  background-color: white;
+  background-size: cover;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+.addbut:hover {
+  background-color: rgb(199, 199, 199);
+}
+.uploadtfxx {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  border: transparent;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.uploadtfxx:hover {
+  background: rgb(50, 153, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+}
+.headery {
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 120, 196, 1) 0%,
+    rgba(50, 153, 255, 1) 100%
+  );
+}
+.tabb {
+  background: rgb(45, 120, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 120, 196, 1) 0%,
+    rgba(50, 153, 255, 1) 100%
+  );
+}
+.tabtit {
+  color: black;
+}

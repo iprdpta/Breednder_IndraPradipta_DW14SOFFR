@@ -1,0 +1,109 @@
+.cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cbdy {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  height: 270px;
+  bottom: 200px;
+  top: 0px;
+  overflow-y: auto;
+  background: white;
+  margin-bottom: 10px;
+}
+#prfl {
+  background-color: white;
+  position: relative;
+  margin-left: 200px;
+  margin-top: 20px;
+  width: 500px;
+  height: 600px;
+  -webkit-box-shadow: -2px 5px 50px 9px #5e5e5e;
+  box-shadow: -2px 5px 50px 9px #5e5e5e;
+  border-radius: 10px;
+}
+.piccc {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+#info {
+  position: absolute;
+  z-index: 1;
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 91%); */
+  height: 50px;
+  width: 100%;
+}
+.bred {
+  position: relative;
+  margin-left: 15px;
+  top: 5px;
+  color: white;
+  font-size: 25px;
+  font-family: "Righteous", cursive;
+}
+.texx {
+  color: black;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+}
+.ddx {
+  float: right;
+  margin-right: 20px;
+  opacity: 0.7;  
+}
+.iconn {
+  position: relative;
+  top: -1px;
+  width: 20px;
+  margin-right: 10px;
+}
+#about {
+  font-size: 25px;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  font-style: italic;
+}
+.aboutpet {
+  color: black;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: "Titillium Web", sans-serif;
+}
+#edts {
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 50px;
+  border: transparent;
+  border-radius: 10px;
+  background: rgb(45, 120, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 120, 196, 1) 0%,
+    rgba(50, 153, 255, 1) 100%
+  );
+  color: white;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+#edts:hover {
+  background: rgb(50, 153, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 153, 255, 1) 0%,
+    rgba(45, 120, 196, 1) 100%
+  );
+}

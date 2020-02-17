@@ -1,0 +1,15 @@
+.scrollbar {
+  overflow-y: scroll; }
+  
+  .scrollbar-juicy-peach::-webkit-scrollbar-track {
+  border-radius: 0px; }
+  
+  .scrollbar-juicy-peach::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(77, 77, 255, 0); }
+  
+  .scrollbar-juicy-peach::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(77, 77, 255, 0.205)), to(rgba(77, 77, 255, 0.205)));
+  background-image: -webkit-linear-gradient(left, rgba(77, 77, 255, 0.205) 0%, rgba(77, 77, 255, 0.205) 100%);
+  background-image: linear-gradient(to right, rgba(77, 77, 255, 0.205) 0%, rgba(77, 77, 255, 0.205) 100%); }

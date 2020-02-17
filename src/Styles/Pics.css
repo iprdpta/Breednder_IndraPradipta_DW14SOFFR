@@ -1,0 +1,7 @@
+.profilepics{
+    width: 100%;
+    height: 300px;
+}
+.profilepics:hover{
+    filter: contrast(150%)
+}
