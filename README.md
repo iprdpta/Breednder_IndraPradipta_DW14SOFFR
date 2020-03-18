@@ -1,68 +1,111 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PetMatch
+App for finding your pet best Matches
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Server Setup](#server-setup)
+  - [Client Setup](#client-setup)
+- [Screenshots](#screenshots)
+- [Built With](#built-with)
+- [Author](#author)
+- [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before starting to install the project, there're some things that need to be done first.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure all of these are properly installed in your system.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Application  | Download                                                                            |
+| ------------ | ----------------------------------------------------------------------------------- |
+| Git          | [Windows](https://gitforwindows.org/) / [Linux](https://git-scm.com/download/linux) / [Mac](https://git-scm.com/download/mac)  |
+| Node.js      | [Link](https://nodejs.org/en/download/)                                             |
+| MySQL        | [Link](https://www.mysql.com/downloads/)                                            |
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First, clone this repository into your system.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+git clone https://github.com/iprdpta/TrainTick.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then, install all the packages that described in `package.json` of both `client` and `server` directories.
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Server Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For the server setup, first, make sure your MySQL services is running fine. In `server` directory, you'll find `config.json` inside `config` folder. Open and edit the `development` configuration to match your database setup.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+After completing the database configuration setup, migrate all the required tables.
 
-## Learn More
+```
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We also need to configure some environtment variables for the server, let's create .env file in server's root project, open and edit it, then input the code below.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+PORT=4000
+SECRET_KEY=ThisIsTheSecretKey
+```
 
-### Code Splitting
+The `SECRET_KEY` and `PORT` you can custom it as you wish.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+And for the last step, running the server
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Client Setup
 
-### Making a Progressive Web App
+Before running the application, we need to configure an environtment variable for the client, let's find .env file in client's root project, open and edit it.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```
+REACT_APP_BASE_BACKEND_URL=http://localhost:4000
+```
+Note that the REACT_APP_BASE_BACKEND_URL above is the address of the server previously run, making sure the ip and port are the same with server address.
 
-### Advanced Configuration
+Then, run the web application.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+`npm run start`
 
-### Deployment
+Wait till the application is opened into your browser. Now, you can explore Landtick and its features. Enjoy!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Screenshots
 
-### `npm run build` fails to minify
+<img src="docs/screenshots/TrainTick_ss.jpg" />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Built With
+
+- [React JS](https://reactjs.org/) - Front-end
+- [Express JS](https://expressjs.com) - Back-end
+- [MySQL](https://www.mysql.com) - Database
+
+## Author
+
+**Indra Pradipta** - [Indra Pradipta](https://github.com/iprdpta)
+
+## License
+
+This project is licensed under the GNU General Public v3.0 License - see the [LICENSE](LICENSE) file for details
