@@ -41,6 +41,10 @@ Then, install all the packages that described in `package.json` of both `client`
 npm install
 ```
 
+### Server Setup
+
+[PetMatch API](https://github.com/iprdpta/BreednderAPI_indraPradipta_DW14SOFFR)
+
 ### Client Setup
 
 Before running the application, we need to configure an environtment variable for the client, let's find .env file in client's root project, open and edit it.
